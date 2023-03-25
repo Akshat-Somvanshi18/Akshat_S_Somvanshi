@@ -1,5 +1,5 @@
 import React from "react";
-
+import {Link} from "react-router-dom";
 export default function Section2() {
   return (
     <>
@@ -36,8 +36,8 @@ export default function Section2() {
         </p>
         
         <div className="d-flex align-items-center justify-content-center w-100">
-          <button className="btn btn-outline-danger mx-2 px-4">Resume</button>
-          <button className="btn btn-outline-danger mx-2 ">Contact Me</button>
+          <Link className="btn btn-outline-danger mx-2 px-4" to="/Resume">Resume</Link>
+          <Link className="btn btn-outline-danger mx-2 " to="/Contact">Contact Me</Link>
         </div>
       </section>
     </>
